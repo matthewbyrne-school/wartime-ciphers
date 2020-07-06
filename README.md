@@ -51,13 +51,13 @@ To run this implementation in a shell like manner make sure that "chi_rotors.jso
 
 The purpose of each included file is as follows:
 
-chi_rotors 			  -> this encodes every pin, or 'cam', for every chi rotor
-psi_rotors 			  -> as above, but for psi
-mu_rotors			    -> as above, but for mu
-randomise_rotors  -> randomises all cams for every rotor and rewrites each rotor file
-letter_lookup		  -> a lookup table for letters to 5 bit binary
-rotor_modules		  -> this is a module that contains every rotor class utilised
-main 				      -> this is the main file that allows the lorenz to be used in a shell environment
+  - *chi_rotors.json*: this encodes every pin, or 'cam', for every chi rotor
+  - *psi_rotors.json*: as above, but for psi
+  - *mu_rotors.json*: as above, but for mu
+  - *randomise_rotors.py*: randomises all cams for every rotor and rewrites each rotor file
+  - *letter_lookup.json*: a lookup table for letters to 5 bit binary
+  - *rotor_modules.py*: this is a module that contains every rotor class utilised
+  - *main.py*: this is the main file that allows the lorenz to be used in a shell environment
 
 
 
