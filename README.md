@@ -61,7 +61,7 @@ main 				      -> this is the main file that allows the lorenz to be used in a s
 
 
 
--- ROTOR SETTINGS INPUT --
+### Rotor settings input
 
 Rotor settings should be input as such:
 
