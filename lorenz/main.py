@@ -26,6 +26,10 @@ with open("letter_lookup.json", "r") as l:
 	lookup = json.load(l)
 	inv_lookup = dict([(v, k) for k,v in lookup.items()])
 
+# Boiler plate 5-space display
+def display(x:str)->str:
+	return ' '.join([x[i:i+5] for i in range(0, len(x), 5)])
+
 # Main machine class
 class Lorenz:
 
@@ -66,7 +70,7 @@ class Lorenz:
 
 	def encrypt(self, m):
 		output = ""
-		m = m.upper()
+		m = m.upper().replace(" ", "")
 
 		for letter in m:
 			m = lookup[letter]
@@ -122,7 +126,7 @@ if __name__=="__main__":
 	def shell(lorenz):
 		x = input("\nINPUT\t\t>>>\t").upper()
 
-		print(f"\nCIPHERTEXT\t>>>\t{lorenz.encrypt(x)}\n\n")
+		print(f"\nCIPHERTEXT\t>>>\t{display(lorenz.encrypt(x))}\n\n")
 
 
 
