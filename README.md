@@ -68,3 +68,15 @@ Rotor settings should be input as such:
 To set the chi rotors to [1, 2, 3, 4, 5], mu rotors to [6, 7], and psi rotors to [8, 9, 10, 11, 12], you would enter:
 
 	[1, 2, 3, 4, 5] | [6, 7] | [8, 9, 10, 11, 12] 
+
+
+
+### Text input / Reading text output
+
+In the input/output of the machine, a physical space ' ' is purely aesthetic to make things easier to read. Instead of using these types of space, Lorenz uses a '9' to represent them. Most common interpretations are:
+  - **9**: space
+  - **8**: -
+  - **5**: +
+  - **4**: LF
+  - **3**: CR
+  - **/**: null
