@@ -1,4 +1,6 @@
-### How Enigma Works
+# Enigma
+
+## How Enigma Works
 
 The Enigma machine works by taking an input key, running it through a complicated wiring that jumbles the character input into a completely different one.
 
@@ -11,7 +13,7 @@ From the reflector, the signal is sent back through the rotors in reverse order,
 
 
 
-### How to use the Enigma implementation
+## How to use the Enigma implementation
 
 In the enigma repository there are 3 files:
 
