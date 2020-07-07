@@ -118,8 +118,8 @@ class PSI(CHI):
 
 class MU(rotorbank):
 	def __init__(self, mu1, mu2):
-		self.I 	= mu1
-		self.II = mu2
+		self.I 	= mu1 if mu1.size == 61 else mu2
+		self.II = mu2 if self.I == mu1 else mu1
 
 		self.rotors = [mu1, mu2]
 
