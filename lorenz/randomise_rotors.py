@@ -20,7 +20,7 @@ with open("psi_rotors.json", "r") as p, open("chi_rotors.json", "r") as x, open(
 def rotorGen(rotor):
 	rotor["cams"] = []
 	for _ in range(rotor["n_cams"]):
-		rotor["cams"].append(rand(0, 1))
+		rotor["cams"].append(str(rand(0, 1)))
 	return rotor
 
 # Main runtime
