@@ -16,7 +16,8 @@ CHI			->		this is a subclass of rotorbank for the CHI type rotors
 PSI			-> 		this is a subclass of CHI class for the PSI type rotors
 MU 			->		this is a standalone rotorbank class for the MU type rotors 
 '''
-
+# Imports
+from random import randint
 
 
 # Rotor class
@@ -64,10 +65,16 @@ class rotorbank:
 
 	def __init__(self, *rotors):
 		self.rotors = list(rotors)
-		self.r1, self.r2, self.r3, self.r4, self.r5 = rotors
+		self.r5, self.r4, self.r3, self.r2, self.r1 = rotors
 
 	def getAdvancement(self):
 		return [r.advstate for r in self.rotors]
+
+	def random(self):
+		for rotor in self.rotors:
+			x = randint(0, rotor.size-1)
+			while rotor.advstate != x:
+				rotor.advance()
 
 	def keystream(self):
 		k = ""

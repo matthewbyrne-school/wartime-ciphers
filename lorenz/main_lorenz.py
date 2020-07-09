@@ -61,7 +61,7 @@ class Lorenz:
 		return vernam(self.psi.keystream(), self.chi.keystream())
 
 	def getAdvanceStates(self):
-		return f"Rotor Settings -> χ{str(self.chi.getAdvancement())} μ{str(self.mu.getAdvancement())} ψ{str(self.psi.getAdvancement())}"
+		return f"Rotor Settings -> ψ{str(self.psi.getAdvancement())} μ{str(self.mu.getAdvancement())} χ{str(self.chi.getAdvancement())}"
 
 	def set(self, x, m, p):
 		self.chi.set(*x)
